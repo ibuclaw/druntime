@@ -751,14 +751,30 @@ version (DigitalMars) version (AnyX86)
  * They may be used to guarantee a write or read cycle occurs at a specified address.
  */
 
+// @@@DEPRECATED_2.092@@@
+deprecated("Please import it from core.volatile instead.")
 ubyte  volatileLoad(ubyte * ptr);
+// @@@DEPRECATED_2.092@@@
+deprecated("Please import it from core.volatile instead.")
 ushort volatileLoad(ushort* ptr);  /// ditto
+// @@@DEPRECATED_2.092@@@
+deprecated("Please import it from core.volatile instead.")
 uint   volatileLoad(uint  * ptr);  /// ditto
+// @@@DEPRECATED_2.092@@@
+deprecated("Please import it from core.volatile instead.")
 ulong  volatileLoad(ulong * ptr);  /// ditto
 
+// @@@DEPRECATED_2.092@@@
+deprecated("Please import it from core.volatile instead.")
 void volatileStore(ubyte * ptr, ubyte  value);   /// ditto
+// @@@DEPRECATED_2.092@@@
+deprecated("Please import it from core.volatile instead.")
 void volatileStore(ushort* ptr, ushort value);   /// ditto
+// @@@DEPRECATED_2.092@@@
+deprecated("Please import it from core.volatile instead.")
 void volatileStore(uint  * ptr, uint   value);   /// ditto
+// @@@DEPRECATED_2.092@@@
+deprecated("Please import it from core.volatile instead.")
 void volatileStore(ulong * ptr, ulong  value);   /// ditto
 
 @system unittest
