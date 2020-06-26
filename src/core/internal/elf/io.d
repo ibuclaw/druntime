@@ -34,6 +34,11 @@ else version (DragonFlyBSD)
     import core.sys.dragonflybsd.sys.link_elf;
     version = LinuxOrBSD;
 }
+else version (Solaris)
+{
+    import core.sys.solaris.link;
+    version = LinuxOrBSD;
+}
 
 /**
  * File-based memory-mapped I/O (read-only).
